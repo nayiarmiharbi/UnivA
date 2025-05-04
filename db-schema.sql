@@ -76,3 +76,7 @@ CREATE TABLE Enrollment (
     FOREIGN KEY (student_id) REFERENCES Student(student_id) ON DELETE CASCADE,
     FOREIGN KEY (course_id) REFERENCES Course(course_id) ON DELETE CASCADE
 );
+
+
+-- ======================Inserting Initial Values================================
+INSERT INTO Department (name) VALUES ('ME');
